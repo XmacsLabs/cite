@@ -3,7 +3,12 @@
 <style|<tuple|tmdoc|no-page-numbers|british|cite-sort>>
 
 <\body>
-  <tmdoc-title|The cite package>
+  <tmdoc-title|The cite-sort package>
+
+  <paragraph|How to use the cite-sort package?>
+
+  Click <menu|Document|Style|Add package|Contrib|cite-sort> or click
+  <menu|<icon|tm_add.svg>|Contrib|cite-sort> on the focus toolbar.
 
   <paragraph|How to cite?>
 
@@ -14,9 +19,9 @@
   <paragraph|How to test?>
 
   <\session|scheme|default>
-    <\unfolded-io|Scheme] >
+    <\folded-io|Scheme] >
       (use-modules (contrib cite cite-sort-test))
-    <|unfolded-io>
+    <|folded-io>
       (#1=(inlet 'supports-slidemove? supports-slidemove? 'supports-python?
       supports-python? 'all-python-launchers all-python-launchers
       'conda-launchers conda-launchers 'conda-launcher conda-launcher
@@ -26,7 +31,7 @@
       'scala-\<gtr\>texmacs scala-\<gtr\>texmacs 'texmacs-\<gtr\>scala
       texmacs-\<gtr\>scala 'python-snippet-\<gtr\>texmacs
       python-snippet-\<gtr\>texmacs ...))
-    </unfolded-io>
+    </folded-io>
 
     <\input|Scheme] >
       (regtest-cite-sort)
